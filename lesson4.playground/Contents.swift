@@ -145,3 +145,24 @@ print(bmw.brandName)
 // На вход функции 2 массива. Первый - имена [“Петя”, “Гриша”, “Никола”]. Второй - соответствующие времена пробежки дистанции. [10, 6, 25] (Петя - за 10 минут, Гриша - 6 минут, Никола - 25 минут) . Написать функцию, возвращающую самого медленного и самого быстрого.
 //6. Никто ее в прошлой домашке правильно не решил
 
+protocol Fighter {
+    // punch()
+}
+
+extension Fighter {
+    func punch() {
+        print("punch")
+    }
+}
+
+struct MagicalFighter: Fighter {
+    func punch() {
+        print("Magic punch")
+    }
+}
+
+var i = MagicalFighter()
+i.punch()
+var mi: Fighter = i
+mi.punch()
+
