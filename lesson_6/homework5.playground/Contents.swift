@@ -79,3 +79,52 @@ class Master {
         self.proffesion = proffesion
     }
 }
+
+
+
+
+protocol KonoplevProtocol {
+    associatedtype DataType: Comparable, Hashable
+    
+    var items: [DataType] { get set }
+}
+
+extension KonoplevProtocol {
+    mutating func add(item: DataType) {
+        items.append(item)
+    }
+    
+    func containsOf(item: DataType) -> Bool {
+        
+        for element in items {
+            if element == item {
+                return true
+            }
+        }
+        
+        return false
+    }
+}
+
+
+struct MyIntArray: KonoplevProtocol {
+    
+    typealias DataType = Int
+    
+    var items: [Int] = []
+    
+}
+
+struct MyNonHashableStruct: KonoplevProtocol {
+    
+//    typealias DataType = MyIntArray
+    
+    var items: [String] = []
+    
+}
+
+var andrei = MyIntArray()
+print(andrei.add(item: 13))
+print(andrei.containsOf(item: 14))
+print(andrei.containsOf(item: 13))
+
