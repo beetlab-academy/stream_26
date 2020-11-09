@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KVT-Og-B09">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="lam-SN-MSP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5y-tt-TkJ" customClass="StartButton" customModule="DrinkUp" customModuleProvider="target">
+                                <rect key="frame" x="15" y="423" width="384" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jNB-5E-wRM"/>
+                                </constraints>
+                                <state key="normal" title="Старт!"/>
+                                <connections>
+                                    <segue destination="IT2-sK-d02" kind="show" id="oUJ-ww-uh5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lam-SN-MSP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4hh-tA-xqY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lam-SN-MSP" secondAttribute="trailing" id="Ake-Bl-IQi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lam-SN-MSP" secondAttribute="bottom" id="K6G-Qj-oF6"/>
+                            <constraint firstItem="lam-SN-MSP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PkX-Bg-J4S"/>
+                            <constraint firstItem="u5y-tt-TkJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="gbC-sf-73I"/>
+                            <constraint firstItem="u5y-tt-TkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vfj-oP-P2D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u5y-tt-TkJ" secondAttribute="trailing" constant="15" id="xOP-Gz-XAf"/>
+                            <constraint firstItem="u5y-tt-TkJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yBe-KV-e9s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Ae-Ke-dIr"/>
+                    <connections>
+                        <outlet property="backgroindImageView" destination="lam-SN-MSP" id="Y6B-xg-ygQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="114"/>
+        </scene>
+        <!--Weight And Sex View Controller-->
+        <scene sceneID="iUP-Nh-jJw">
+            <objects>
+                <viewController id="IT2-sK-d02" customClass="WeightAndSexViewController" customModule="DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EAI-Jw-Z0e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="JIn-fc-8is">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOO-po-tLL">
+                                <rect key="frame" x="15" y="303" width="384" height="50"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.5976729247" blue="0.89318357110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ClC-eR-buF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9T5-zc-5uF">
+                                <rect key="frame" x="110.5" y="403" width="33" height="30"/>
+                                <state key="normal" title="Муж"/>
+                                <connections>
+                                    <action selector="sexButtonDidTap:" destination="IT2-sK-d02" eventType="touchUpInside" id="3q4-Gm-cmU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-lv-bSi" customClass="StartButton" customModule="DrinkUp" customModuleProvider="target">
+                                <rect key="frame" x="15" y="453" width="384" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f6w-DJ-cb4"/>
+                                </constraints>
+                                <state key="normal" title="Далее"/>
+                                <connections>
+                                    <action selector="nextButtonDidTap:" destination="IT2-sK-d02" eventType="touchUpInside" id="LmS-Qa-FbR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihq-WC-Aga">
+                                <rect key="frame" x="271" y="403" width="32" height="30"/>
+                                <state key="normal" title="Жен"/>
+                                <connections>
+                                    <action selector="sexButtonDidTap:" destination="IT2-sK-d02" eventType="touchUpInside" id="QH5-hi-5rs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="phA-0K-lnv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ihq-WC-Aga" firstAttribute="centerX" secondItem="EAI-Jw-Z0e" secondAttribute="centerX" constant="80" id="0Oe-R9-hcE"/>
+                            <constraint firstItem="ihq-WC-Aga" firstAttribute="top" secondItem="kOO-po-tLL" secondAttribute="bottom" constant="50" id="KKd-k8-A4p"/>
+                            <constraint firstItem="Tcx-lv-bSi" firstAttribute="top" secondItem="ihq-WC-Aga" secondAttribute="bottom" constant="20" id="UyE-vd-5MB"/>
+                            <constraint firstItem="kOO-po-tLL" firstAttribute="centerY" secondItem="EAI-Jw-Z0e" secondAttribute="centerY" constant="-120" id="V9i-Nb-AoM"/>
+                            <constraint firstItem="phA-0K-lnv" firstAttribute="trailing" secondItem="Tcx-lv-bSi" secondAttribute="trailing" constant="15" id="aAN-gV-lJe"/>
+                            <constraint firstItem="Tcx-lv-bSi" firstAttribute="leading" secondItem="phA-0K-lnv" secondAttribute="leading" constant="15" id="eky-Hh-rVW"/>
+                            <constraint firstItem="phA-0K-lnv" firstAttribute="trailing" secondItem="kOO-po-tLL" secondAttribute="trailing" constant="15" id="ihd-EH-sOi"/>
+                            <constraint firstItem="kOO-po-tLL" firstAttribute="centerX" secondItem="EAI-Jw-Z0e" secondAttribute="centerX" id="kZr-X2-mte"/>
+                            <constraint firstItem="9T5-zc-5uF" firstAttribute="centerX" secondItem="EAI-Jw-Z0e" secondAttribute="centerX" constant="-80" id="uM1-x5-oJs"/>
+                            <constraint firstItem="kOO-po-tLL" firstAttribute="leading" secondItem="phA-0K-lnv" secondAttribute="leading" constant="15" id="w6b-hH-DbC"/>
+                            <constraint firstItem="9T5-zc-5uF" firstAttribute="top" secondItem="kOO-po-tLL" secondAttribute="bottom" constant="50" id="wzc-Hh-xaZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ihp-jV-jUP"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="JIn-fc-8is" id="ZVN-cQ-fYv"/>
+                        <outlet property="femaleButton" destination="ihq-WC-Aga" id="ZjE-Qd-1jt"/>
+                        <outlet property="maleButton" destination="9T5-zc-5uF" id="YJY-1O-tNj"/>
+                        <outlet property="nextButton" destination="Tcx-lv-bSi" id="dba-Fm-079"/>
+                        <outlet property="textField" destination="kOO-po-tLL" id="G47-lk-zKn"/>
+                        <segue destination="yrq-l2-Rf7" kind="show" identifier="goToSelectDrinks" id="d3g-2c-nV9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8UR-37-2Vn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="114"/>
+        </scene>
+        <!--Select Drinks View Controller-->
+        <scene sceneID="vhg-dW-ua9">
+            <objects>
+                <viewController id="yrq-l2-Rf7" customClass="SelectDrinksViewController" customModule="DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBD-mN-PpM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1Ig-v7-XBw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XbO-fE-Lcz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaB-QH-eSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qee-zo-wHp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KVT-Og-B09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nwv-Ue-CJl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AJO-d9-yIm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whm-LZ-gVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImage" width="405" height="720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
