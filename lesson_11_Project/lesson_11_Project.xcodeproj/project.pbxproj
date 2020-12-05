@@ -58,7 +58,6 @@
 		B7258C9E25657D770017EDE3 /* Lesson_11_Project */ = {
 			isa = PBXGroup;
 			children = (
-				B7258CA525657D770017EDE3 /* Main.storyboard */,
 				B7258CAD25657D780017EDE3 /* Info.plist */,
 				B7258CB425657E140017EDE3 /* Delegate */,
 				B7258CB525657E2F0017EDE3 /* other */,
@@ -69,6 +68,7 @@
 		B7258CB425657E140017EDE3 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				B7258CA525657D770017EDE3 /* Main.storyboard */,
 				B7258CBE25657FD80017EDE3 /* DelegateExampleVC.swift */,
 				B7258CB625657E530017EDE3 /* CustomView.swift */,
 			);
