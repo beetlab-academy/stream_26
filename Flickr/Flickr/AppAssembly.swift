@@ -17,4 +17,13 @@ class AppAssembly {
         presenter.view = vc
         return vc
     }
+    
+    func detailedViewController(photo: PhotoModel) -> UIViewController {
+        let vc = DetailedViewController.create()
+        let presenter = DetailedPresenter()
+        vc.presenter = presenter
+        presenter.view = vc
+        vc.photo = photo
+        return vc
+    }
 }

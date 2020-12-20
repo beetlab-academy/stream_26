@@ -13,6 +13,8 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var photo: PhotoModel?
+    var presenter: DetailedPresenter?
+    
     private let urlCreaterService = UrlCreaterService()
     
     override func viewDidLoad() {
@@ -20,6 +22,11 @@ class DetailedViewController: UIViewController {
         guard let photo = photo else { return }
         let url = urlCreaterService.createUrl(withModel: photo)
         imageView.kf.setImage(with: URL(string: url))
+        
+    }
+    
+    deinit {
+        print("viewController \(self) был удален из памяти")
     }
 
 }

@@ -25,7 +25,7 @@ class TapeViewController: UIViewController {
     }
     
     private let photoCellIdentidier = "photoTableViewCell"
-    
+    private let appAssembly = AppAssembly()
     var presenter: TapePresenterProtocol!
     
 
@@ -66,7 +66,12 @@ extension TapeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let model = presenter.photo(at: indexPath)
-        showDetailedWith(photo: model)
+        if indexPath.row % 2 == 0 {
+            pushDetailedViewController(photo: model)
+        } else {
+            presentDetailedWith(photo: model)
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -75,10 +80,14 @@ extension TapeViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension TapeViewController {
-    func showDetailedWith(photo: PhotoModel) {
-        let vc = DetailedViewController.create()
-        vc.photo = photo
+    func presentDetailedWith(photo: PhotoModel) {
+        let vc = appAssembly.detailedViewController(photo: photo)
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    func pushDetailedViewController(photo: PhotoModel) {
+        let vc = appAssembly.detailedViewController(photo: photo)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

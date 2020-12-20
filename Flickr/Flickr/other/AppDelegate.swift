@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tapeVC = appAssembly.tapeViewController()
         let navigationController = UINavigationController()
-        navigationController.pushViewController(tapeVC, animated: true)
+        navigationController.pushViewController(tapeVC, animated: false)
         
         window?.rootViewController = navigationController
         

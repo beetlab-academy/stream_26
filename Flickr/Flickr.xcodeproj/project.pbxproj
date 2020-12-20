@@ -25,6 +25,7 @@
 		9A721D7D258FC0DF00C70BAD /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D7C258FC0DF00C70BAD /* Storyboardable.swift */; };
 		9A721D8A258FD00800C70BAD /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D89258FD00800C70BAD /* DetailedViewController.swift */; };
 		9A721D8D258FD09900C70BAD /* Detailed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A721D8C258FD09900C70BAD /* Detailed.storyboard */; };
+		9A721D91258FDDB800C70BAD /* DetailedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D90258FDDB800C70BAD /* DetailedPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		9A721D7C258FC0DF00C70BAD /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		9A721D89258FD00800C70BAD /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		9A721D8C258FD09900C70BAD /* Detailed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detailed.storyboard; sourceTree = "<group>"; };
+		9A721D90258FDDB800C70BAD /* DetailedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPresenter.swift; sourceTree = "<group>"; };
 		C6CDE4B93F9BE3D2454AEF78 /* Pods-Flickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr.debug.xcconfig"; path = "Target Support Files/Pods-Flickr/Pods-Flickr.debug.xcconfig"; sourceTree = "<group>"; };
 		D09001AC3EA3A55727005F4F /* Pods-Flickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr.release.xcconfig"; path = "Target Support Files/Pods-Flickr/Pods-Flickr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				9A721D89258FD00800C70BAD /* DetailedViewController.swift */,
+				9A721D90258FDDB800C70BAD /* DetailedPresenter.swift */,
 			);
 			path = DetailedViewController;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				9A721D7D258FC0DF00C70BAD /* Storyboardable.swift in Sources */,
 				9A721D74258FBD7000C70BAD /* TapePresenter.swift in Sources */,
 				9A721D8A258FD00800C70BAD /* DetailedViewController.swift in Sources */,
+				9A721D91258FDDB800C70BAD /* DetailedPresenter.swift in Sources */,
 				9A650E192584D4F10093B084 /* Api_conf.swift in Sources */,
 				9A721D78258FBF6E00C70BAD /* AppAssembly.swift in Sources */,
 				9A4BC63E2584C2CB00713B78 /* TapeViewController.swift in Sources */,
