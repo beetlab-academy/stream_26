@@ -1,53 +1,38 @@
 //
-//  ViewController.swift
+//  TapePresenter.swift
 //  Flickr
 //
-//  Created by Андрей Коноплев on 12.12.2020.
+//  Created by Андрей Коноплев on 20.12.2020.
 //
 
-import UIKit
+import Foundation
 import SwiftyJSON
 
-class TapeViewController: UIViewController {
-    
-    
-    
-    @IBOutlet weak var tableView: UITableView! {
-        didSet {
-            tableView.delegate = self
-            tableView.dataSource = self
-            let nib = UINib(nibName: "PhotoTableViewCell", bundle: nil)
-            tableView.register(nib, forCellReuseIdentifier: photoCellIdentidier)
-        }
-    }
-    
-    private let photoCellIdentidier = "photoTableViewCell"
-    private let urlCreaterService = UrlCreaterService()
-    var dataSource: [PhotoModel] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadPhotos()
-    }
+protocol TapePresenterProtocol: class {
+    func viewDidLoad() -> Void
+    func numberOfPhotos() -> Int
+    func photo(at indexPath: IndexPath) -> PhotoModel
 }
 
-extension TapeViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+class TapePresenter: TapePresenterProtocol {
+    
+    weak var view: TapeViewProtocol!
+    
+    private let urlCreaterService = UrlCreaterService()
+    private var dataSource: [PhotoModel] = []
+    
+    func viewDidLoad() {
+        loadPhotos()
+    }
+    
+    func numberOfPhotos() -> Int {
         return dataSource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: photoCellIdentidier, for: indexPath) as! PhotoTableViewCell
-        cell.configure(with: dataSource[indexPath.row])
-        return cell
+    func photo(at indexPath: IndexPath) -> PhotoModel {
+        return dataSource[indexPath.row]
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
-    }
-}
-
-extension TapeViewController {
     func loadPhotos() {
         Api_wrapper.getInteresPhoto(page: 1,
                                     per_page: 20) { [weak self] (response) in
@@ -76,12 +61,12 @@ extension TapeViewController {
                 }
                 
                 self.dataSource = photos
-                self.tableView.reloadData()
+                self.view.reloadData()
             }
         } failure: { (error) in
-            print(error)
+            self.view.showEror(error: error)
         }
-
     }
+    
 }
 

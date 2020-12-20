@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3CC75224DF6847E2EA7AC354 /* Pods_Flickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966692ADD8C6E402CBB3A94A /* Pods_Flickr.framework */; };
 		9A4BC63A2584C2CB00713B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BC6392584C2CB00713B78 /* AppDelegate.swift */; };
-		9A4BC63C2584C2CB00713B78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BC63B2584C2CB00713B78 /* SceneDelegate.swift */; };
 		9A4BC63E2584C2CB00713B78 /* TapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BC63D2584C2CB00713B78 /* TapeViewController.swift */; };
 		9A4BC6412584C2CB00713B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BC63F2584C2CB00713B78 /* Main.storyboard */; };
 		9A4BC6432584C2CC00713B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BC6422584C2CC00713B78 /* Assets.xcassets */; };
@@ -21,13 +20,17 @@
 		9A650E292584EA130093B084 /* UrlCreaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A650E282584EA130093B084 /* UrlCreaterService.swift */; };
 		9A650E322584EE770093B084 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A650E302584EE770093B084 /* PhotoTableViewCell.swift */; };
 		9A650E332584EE770093B084 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A650E312584EE770093B084 /* PhotoTableViewCell.xib */; };
+		9A721D74258FBD7000C70BAD /* TapePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D73258FBD7000C70BAD /* TapePresenter.swift */; };
+		9A721D78258FBF6E00C70BAD /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D77258FBF6E00C70BAD /* AppAssembly.swift */; };
+		9A721D7D258FC0DF00C70BAD /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D7C258FC0DF00C70BAD /* Storyboardable.swift */; };
+		9A721D8A258FD00800C70BAD /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721D89258FD00800C70BAD /* DetailedViewController.swift */; };
+		9A721D8D258FD09900C70BAD /* Detailed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A721D8C258FD09900C70BAD /* Detailed.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		966692ADD8C6E402CBB3A94A /* Pods_Flickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BC6362584C2CB00713B78 /* Flickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BC6392584C2CB00713B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A4BC63B2584C2CB00713B78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9A4BC63D2584C2CB00713B78 /* TapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeViewController.swift; sourceTree = "<group>"; };
 		9A4BC6402584C2CB00713B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A4BC6422584C2CC00713B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		9A650E282584EA130093B084 /* UrlCreaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlCreaterService.swift; sourceTree = "<group>"; };
 		9A650E302584EE770093B084 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		9A650E312584EE770093B084 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		9A721D73258FBD7000C70BAD /* TapePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePresenter.swift; sourceTree = "<group>"; };
+		9A721D77258FBF6E00C70BAD /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		9A721D7C258FC0DF00C70BAD /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		9A721D89258FD00800C70BAD /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		9A721D8C258FD09900C70BAD /* Detailed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detailed.storyboard; sourceTree = "<group>"; };
 		C6CDE4B93F9BE3D2454AEF78 /* Pods-Flickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr.debug.xcconfig"; path = "Target Support Files/Pods-Flickr/Pods-Flickr.debug.xcconfig"; sourceTree = "<group>"; };
 		D09001AC3EA3A55727005F4F /* Pods-Flickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr.release.xcconfig"; path = "Target Support Files/Pods-Flickr/Pods-Flickr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,12 +94,16 @@
 		9A4BC6382584C2CB00713B78 /* Flickr */ = {
 			isa = PBXGroup;
 			children = (
+				9A4BC63F2584C2CB00713B78 /* Main.storyboard */,
+				9A721D8C258FD09900C70BAD /* Detailed.storyboard */,
 				9A650E272584E9FA0093B084 /* Service */,
 				9A650E232584E7990093B084 /* model */,
 				9A4BC6542584CD9800713B78 /* Constants */,
 				9A650E172584D4D40093B084 /* Network */,
-				9A4BC63F2584C2CB00713B78 /* Main.storyboard */,
-				9A4BC63D2584C2CB00713B78 /* TapeViewController.swift */,
+				9A721D85258FCFC300C70BAD /* DetailedViewController */,
+				9A721D86258FCFD200C70BAD /* Tape */,
+				9A721D77258FBF6E00C70BAD /* AppAssembly.swift */,
+				9A721D7C258FC0DF00C70BAD /* Storyboardable.swift */,
 				9A650E2B2584EE220093B084 /* cells */,
 				9A4BC6512584CBE900713B78 /* other */,
 				9A4BC6472584C2CC00713B78 /* Info.plist */,
@@ -105,7 +117,6 @@
 				9A4BC6392584C2CB00713B78 /* AppDelegate.swift */,
 				9A4BC6442584C2CC00713B78 /* LaunchScreen.storyboard */,
 				9A4BC6422584C2CC00713B78 /* Assets.xcassets */,
-				9A4BC63B2584C2CB00713B78 /* SceneDelegate.swift */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -150,6 +161,23 @@
 				9A650E312584EE770093B084 /* PhotoTableViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		9A721D85258FCFC300C70BAD /* DetailedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A721D89258FD00800C70BAD /* DetailedViewController.swift */,
+			);
+			path = DetailedViewController;
+			sourceTree = "<group>";
+		};
+		9A721D86258FCFD200C70BAD /* Tape */ = {
+			isa = PBXGroup;
+			children = (
+				9A721D73258FBD7000C70BAD /* TapePresenter.swift */,
+				9A4BC63D2584C2CB00713B78 /* TapeViewController.swift */,
+			);
+			path = Tape;
 			sourceTree = "<group>";
 		};
 		CE5BDA60D3F3DC187077C96C /* Frameworks */ = {
@@ -223,6 +251,7 @@
 				9A4BC6462584C2CC00713B78 /* LaunchScreen.storyboard in Resources */,
 				9A4BC6432584C2CC00713B78 /* Assets.xcassets in Resources */,
 				9A4BC6412584C2CB00713B78 /* Main.storyboard in Resources */,
+				9A721D8D258FD09900C70BAD /* Detailed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,14 +304,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A721D7D258FC0DF00C70BAD /* Storyboardable.swift in Sources */,
+				9A721D74258FBD7000C70BAD /* TapePresenter.swift in Sources */,
+				9A721D8A258FD00800C70BAD /* DetailedViewController.swift in Sources */,
 				9A650E192584D4F10093B084 /* Api_conf.swift in Sources */,
+				9A721D78258FBF6E00C70BAD /* AppAssembly.swift in Sources */,
 				9A4BC63E2584C2CB00713B78 /* TapeViewController.swift in Sources */,
 				9A650E1C2584DCE10093B084 /* Api_wrapper.swift in Sources */,
 				9A4BC63A2584C2CB00713B78 /* AppDelegate.swift in Sources */,
 				9A650E292584EA130093B084 /* UrlCreaterService.swift in Sources */,
 				9A650E322584EE770093B084 /* PhotoTableViewCell.swift in Sources */,
 				9A650E252584E7B50093B084 /* PhotoModel.swift in Sources */,
-				9A4BC63C2584C2CB00713B78 /* SceneDelegate.swift in Sources */,
 				9A4BC6562584CDD500713B78 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
