@@ -1,0 +1,6 @@
+framework module Pods_MVP_Coordinator_DI_App {
+  umbrella header "Pods-MVP+Coordinator+DI-App-umbrella.h"
+
+  export *
+  module * { export * }
+}
